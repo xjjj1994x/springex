@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        $(function()){
+            $("button").click(function(){
+                $.get("http://localhost:8080/resthellow",function(data){
+                    alert("Data:"+data);
+                })
+            })
+        }
+    </script>
+    </head>
+    <body>
+
+    </body>
+</html>
