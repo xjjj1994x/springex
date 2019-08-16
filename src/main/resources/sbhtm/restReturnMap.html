@@ -8,12 +8,17 @@
         <script>
             $.get("http://localhost:8080/ws/organization", function(data){
                 $.map(data, function (key, value){
-                    alert(value + ':' + key);
+                    $("#memo").append("<tr><td>" + value + "</td>" + "<td>" + key + "</td></tr>");
                 });
             });
             </script>
     </head>
     <body>
-        <button> hi~!</button>
+        <div class="container">
+            <table class="table bordered col-6" id="memo">
+                <th>key</th><th>value</th>
+
+            </table>
+        </div>
     </body>
 </html>

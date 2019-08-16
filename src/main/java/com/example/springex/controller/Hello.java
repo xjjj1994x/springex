@@ -1,4 +1,4 @@
-package com.example.springex;
+package com.example.springex.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
